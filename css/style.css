@@ -529,7 +529,7 @@ p.para {
 .table-form form input[type="text"]:hover,.table-form textarea:hover{
 	border: 1px solid #B9CB41;
 }
-.table-form input[type="submit"]{
+.table-form input[type="submit"],.downloadbtn{
 	font-family: 'Open Sans', sans-serif;
 	color: #5a5a5a;
 	padding: 0.8em 1.5em;
