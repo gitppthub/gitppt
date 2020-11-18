@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>免费PPT模板下载：gitppt.com</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link href="./css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/fav-icon.png" />
+	<script
+			type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    </script>
+    <!---start-click-drop-down-menu----->
+    <script src="./js/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!---start-wrap---->
+<!---start-header---->
+<div class="header">
+	<div class="wrap">
+		<div class="logo">
+			<a href="index.html"><img src="./images/logo.png" title="pinbal" /></a>
+		</div>
+		<div class="nav-icon">
+			<!-- <a href="#" class="right_bt" id="activator"><span> </span> </a> -->
+		</div>
+		<div class="top-searchbar">
+			<form>
+				<!-- <input type="text" /><input type="submit" value="" /> -->
+			</form>
+		</div>
+		<div class="clear"> </div>
+	</div>
+</div>
+<!---//End-header---->
+<!---start-content---->
+<div class="content">
+	<div class="wrap">
+		<div class="single-page">
+			<div class="single-page-artical">
+				<div id="artical-content" class="artical-content">
+					<!--<img src="./images/single-post-pic.jpg" >-->
+					<!--<h3><a href="#">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h3>-->
+					<!--<p>Lorem </p>-->
+				</div>
+
+				<div class="clear"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---//End-wrap---->
+<script type="text/javascript">
+    (function ($) {
+        var item=localStorage.getItem("gitppt-detail");
+        if(item==null){
+            alert("请先到主页选择PPT条目");
+            window.location.href = "index.html";
+        }else{
+            item=JSON.parse(item)
+        }
+        var $content = $('#artical-content');
+        var titleEle=$("<h3><a href='#'>"+item.title+"</a></h3>");
+        $content.append(titleEle);
+        var pEle=$("<p>"+item.discrip.replace(/\r\n/g,"<br/>")  +"</p>");
+        $content.append(pEle);
+        var downladBtnEle="<a class='downloadbtn' href='"+"https://gitppthub.github.io/PPT/"+item.tag+"/"+item.title+"/"+"gitppt.com.pptx"+"' >一键下载此PPT文件</a>";
+        $content.append($(downladBtnEle));
+        for(i=0;i<item.imgs;i++){
+            var imgEle=$("<img src='"+"https://gitppthub.github.io/PPT/"+item.tag+"/"+item.title+"/"+i+".jpg"+"' /><br/>");
+            $content.append(imgEle);
+        }
+        $content.append($(downladBtnEle));
+    })(jQuery);
+</script>
+</body>
+
+</html>
