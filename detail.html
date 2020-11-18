@@ -66,10 +66,10 @@
         $content.append(titleEle);
         var pEle=$("<p>"+item.discrip.replace(/\r\n/g,"<br/>")  +"</p>");
         $content.append(pEle);
-        var downladBtnEle="<a class='downloadbtn' href='"+"https://gitppthub.github.io/PPT/"+item.tag+"/"+item.title+"/"+"gitppt.com.pptx"+"' >一键下载此PPT文件</a>";
+        var downladBtnEle="<a class='downloadbtn' href='"+"PPT/"+item.tag+"/"+item.title+"/"+"gitppt.com.pptx"+"' >一键下载此PPT文件</a>";
         $content.append($(downladBtnEle));
         for(i=0;i<item.imgs;i++){
-            var imgEle=$("<img src='"+"https://gitppthub.github.io/PPT/"+item.tag+"/"+item.title+"/"+i+".jpg"+"' /><br/>");
+            var imgEle=$("<img src='"+"PPT/"+item.tag+"/"+item.title+"/"+i+".jpg"+"' /><br/>");
             $content.append(imgEle);
         }
         $content.append($(downladBtnEle));
