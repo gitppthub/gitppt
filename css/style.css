@@ -193,41 +193,6 @@ a.boxclose{
 	
 }
 /*--//userinfo--*/
-#ppt-tag{
-	width:100%;
-}
-#ppt-tag li{
-	cursor: pointer;
-	float: left;
-	padding:0 10px;
-	margin:4px 4px;
-	font-size: 80%;
-	color:darkgreen;
-	border: 1px solid darkgreen; ;
-	border-radius:30px;
-}
-.col_nav{
-	display:none;
-	padding:0 22%;
-}
-.col_nav ul {
-	float: left;
-}
-.col_nav ul .title{
-	font-size: 80%;
-}
-.col_nav ul li{
-	float: left;
-	padding:0 5px;
-	font-size: 70%;
-}
-#loading{
-	text-align: center;
-	margin: 400px 0
-}
-#loading img{
-	width:200px;
-}
 /*----start-post-grids----*/
 .post-share span{
 	background:url(../images/facebook.png) no-repeat 0px 0px;
@@ -328,7 +293,7 @@ a.boxclose{
 .artical-content h3 a{
 	font: 400 28px/28px 'Open Sans', sans-serif;
 	color: #626262;
-	text-align: left;
+	text-align: center;
 	font-weight: 400;
 	padding: 0.9em 0 0;
 	display: block;
@@ -521,14 +486,14 @@ p.para {
 .table-form form input[type="text"]:hover,.table-form textarea:hover{
 	border: 1px solid #B9CB41;
 }
-.table-form input[type="submit"]{
+.table-form input[type="submit"],.downloadbtn{
 	font-family: 'Open Sans', sans-serif;
-	color: #5a5a5a;
+	color: blue;
 	padding: 0.8em 1.5em;
 	background: #fff;
 	text-decoration: none;
 	text-shadow: none;
-	border: 1px solid rgba(192, 192, 192, 0.61);
+	border: 4px solid rgba(192, 192, 192, 0.61);
 	display: block;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -542,6 +507,14 @@ p.para {
 	cursor:pointer;
 	font-size: 1em;
 	outline:none;
+}
+
+.downloadbtn{
+	text-align: center;
+}
+.downloadbtn:hover{
+	color:#B9CB41;
+	border: 4px solid #B9CB41;
 }
 .table-form input[type="submit"]:hover{
 	color:#B9CB41;
@@ -723,9 +696,6 @@ span.mail a:hover{
 		background: #fff;
 		padding: 10px;
 	}
-	.col_nav{
-		padding:0 12%;
-	}
 }
 /*--//End-media Quries for 1366px-monitors-*/
 /*--media Quries for 1280px-monitors-*/
@@ -737,13 +707,10 @@ span.mail a:hover{
 		bottom: 0px;
 		right: 0px;
 		background: #fff;
-		padding: 5px;
+		padding: 10px;
 	}
 	.contact-to input[type="text"] {
 		width: 30.2%;
-	}
-	.col_nav{
-		padding:0 5%;
 	}
 }
 /*--//End-media Quries for 1280px-monitors-*/
@@ -765,14 +732,11 @@ span.mail a:hover{
 		width: 97.3%;
 	}
 	.top-searchbar {
-		width: 50%;
+		width: 40%;
 	}
 	a.boxclose {
 		right: 6em;
 		top: 2em;
-	}
-	.col_nav{
-		padding:0;
 	}
 }
 /*--//End-media Quries for 1024px-monitors-*/
@@ -799,7 +763,7 @@ span.mail a:hover{
 		padding: 0.6em 1.2em;
 	}
 	.top-searchbar {
-		width: 50%;
+		width: 29%;
 	}
 	a.boxclose {
 		right: 1em;
@@ -814,6 +778,7 @@ span.mail a:hover{
 	.artical-content h3 a {
 		font: 400 24px/36px 'Open Sans', sans-serif;
 		padding: 0.5em 0 0;
+		text-align: center;
 	}
 	.artical-content p:nth-child(1){
 		display:none;	
@@ -861,9 +826,6 @@ span.mail a:hover{
 	}
 	.menu_box_list li a {
 		margin: 0.44em 1.5em;
-	}
-	.col_nav{
-		padding:0;
 	}
 }
 /*--//End-media Quries for 768px-monitors-*/
@@ -978,9 +940,6 @@ span.mail a:hover{
 	.single-page,.contact-info{
 		margin-top: 7em;
 		padding: 4% 4% 5% 4%;
-	}
-	.col_nav{
-		padding:0;
 	}
 }
 /*--//End-media Quries for 640px-monitors-*/
@@ -1108,9 +1067,6 @@ span.mail a:hover{
 	}
 	.span_1_of_first1 h5 {
 		font-size: 1em;
-	}
-	.col_nav{
-		padding:0;
 	}
 }
 /*--//End-media Quries for 480px-monitors-*/
@@ -1245,9 +1201,6 @@ span.mail a:hover{
 	}
 	.span_1_of_first1 h5 {
 		font-size: 1em;
-	}
-	.col_nav{
-		padding:0;
 	}
 }
 /*--//End-media Quries for 320px-monitors-*/
