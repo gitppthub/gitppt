@@ -54,7 +54,7 @@
 <!---//End-wrap---->
 <script type="text/javascript">
 (function($){var item=localStorage.getItem("gitppt-detail");if(item==null){alert("请先到主页选择PPT条目");window.location.href="index.html";}else{item=JSON.parse(item)}
-var $content=$('#artical-content');var titleEle=$("<h3><a href='#'>"+item.title+"</a></h3>");$content.append(titleEle);var pEle=$("<p>"+item.discrip.replace(/\r\n/g,"<br/>")+"</p>");$content.append(pEle);var downladBtnEle="<a class='downloadbtn' href='"+"https://raw.githubusercontent.com/gitppthub/gitppthub.github.io/main/PPT/"+item.tag+"/"+item.title+"/"+"gitppt.com.pptx"+"' >一键下载此PPT文件</a>";$content.append($(downladBtnEle));for(i=0;i<item.imgs;i++){var imgEle=$("<img src='"+"https://raw.githubusercontent.com/gitppthub/gitppthub.github.io/main/PPT/"+item.tag+"/"+item.title+"/"+i+".jpg"+"' /><br/>");$content.append(imgEle);}
+var $content=$('#artical-content');var titleEle=$("<h3><a href='#'>"+item.title+"</a></h3>");$content.append(titleEle);var pEle=$("<p>"+item.discrip.replace(/\r\n/g,"<br/>")+"</p>");$content.append(pEle);var downladBtnEle="<a class='downloadbtn' href='"+"https://raw.githubusercontent.com/gitppthub/gitppthub.github.io/master/PPT/"+item.tag+"/"+item.title+"/"+"gitppt.com.ppt"+"' >一键下载此PPT文件</a>";$content.append($(downladBtnEle));for(i=0;i<item.imgs;i++){var imgEle=$("<img src='"+"https://raw.githubusercontent.com/gitppthub/gitppthub.github.io/master/PPT/"+item.tag+"/"+item.title+"/"+i+".jpg"+"' /><br/>");$content.append(imgEle);}
 $content.append($(downladBtnEle));})(jQuery);
 </script>
 </body>
